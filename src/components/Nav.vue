@@ -2,8 +2,8 @@
 	<div class="nav-container">
 		<img src="../assets/views-logo-transparent.svg" alt="Views logo" class="nav-logo" />
 		<div class="nav-links">
-			<p class="nav-button">GitHub</p>
-			<p class="nav-button">Donate</p>
+			<a href="https://github.com/mahiv87/Views-by-Vue" class="nav-button" target="_blank">GitHub</a>
+			<a href="#" class="nav-button" target="_blank">Donate</a>
 		</div>
 	</div>
 </template>
@@ -47,10 +47,13 @@
 	height: 25px;
 	border-radius: 30px;
 	color: #fffffe;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 .nav-button:hover {
 	background: #e8e4e6;
 	color: #001e1d;
+	transition: all ease 500ms;
 }
 </style>
