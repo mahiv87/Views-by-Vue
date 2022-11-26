@@ -1,5 +1,11 @@
+<script setup lang="ts">
+import TodoInput from './TodoInput.vue';
+</script>
+
 <template>
-	<div class="todo-container"></div>
+	<div class="todo-container">
+		<TodoInput />
+	</div>
 </template>
 
 <style scoped>
