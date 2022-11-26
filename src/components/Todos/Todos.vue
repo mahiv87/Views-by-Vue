@@ -1,5 +1,12 @@
-<script setup lang="ts">
+<script lang="ts">
 import TodoInput from './TodoInput.vue';
+
+export default {
+	name: 'Todos',
+	components: {
+		TodoInput
+	}
+};
 </script>
 
 <template>
