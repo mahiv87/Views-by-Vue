@@ -3,6 +3,7 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from './components/HelloWorld.vue';
 import NavVue from './components/Nav.vue';
+import Todos from './components/Todos/Todos.vue';
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import NavVue from './components/Nav.vue';
 		<p class="title">Vue Your TODOs</p>
 		<p class="subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
 	</div>
+	<Todos />
 </template>
 
 <style scoped>
