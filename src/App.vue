@@ -9,8 +9,9 @@ import Todos from './components/Todos/Todos.vue';
 <template>
 	<NavVue />
 	<div class="heading">
-		<p class="title">Vue Your TODOs</p>
-		<p class="subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+		<img src="./assets/todo-list.svg" alt="todo-list-svg" class="todo-img" />
+		<!-- <p class="title">Vue Your TODOs</p> -->
+		<p class="subtitle">Your TODOs powered by Vue</p>
 	</div>
 	<Todos />
 </template>
@@ -20,21 +21,18 @@ import Todos from './components/Todos/Todos.vue';
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 0px;
+	padding: 10px;
 	width: 992px;
 	height: 200px;
-	margin-inline: auto;
+	margin: 20px auto;
 }
 .subtitle {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
 	padding: 0px 8px;
 	width: 500px;
-	height: 35px;
 	color: #abd1c6;
-	font-size: 29.33px;
+	font-size: 52.11px;
 	text-align: center;
+	margin-top: 0;
 }
 .title {
 	display: flex;
@@ -47,5 +45,10 @@ import Todos from './components/Todos/Todos.vue';
 	height: 112px;
 	color: #fffffe;
 	font-size: 92.59px;
+}
+
+.todo-img {
+	width: 250px;
+	height: auto;
 }
 </style>

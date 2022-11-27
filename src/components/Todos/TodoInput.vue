@@ -43,7 +43,6 @@ export default {
 		<input type="text" id="todo-input" v-model="newTodo" />
 		<p class="todo-button" @click="addTodo()">Submit</p>
 	</div>
-	<p>{{ newTodo }}</p>
 </template>
 
 <style scoped>
