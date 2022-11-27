@@ -1,5 +1,6 @@
 <script lang="ts">
 import TodoInput from './TodoInput.vue';
+import TodoList from './TodoList.vue';
 
 export default {
 	name: 'Todos',
@@ -12,6 +13,7 @@ export default {
 <template>
 	<div class="todo-container">
 		<TodoInput />
+		<TodoList />
 	</div>
 </template>
 
