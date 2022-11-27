@@ -19,11 +19,29 @@ export default {
 </script>
 
 <template>
-	<ul>
-		<li v-for="todo in todos">
+	<ul class="list-container">
+		<li v-for="todo in todos" class="todo-item">
 			<span>{{ todo.task }}</span>
 		</li>
 	</ul>
 </template>
 
-<style scoped></style>
+<style scoped>
+.list-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	padding: 0px;
+	width: 900px;
+	height: 360px;
+}
+
+.todo-item {
+	list-style: none;
+	padding: 5px 25px;
+	gap: 10px;
+	width: 900px;
+	height: 40px;
+}
+</style>
