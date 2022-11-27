@@ -21,7 +21,8 @@ export default {
 <template>
 	<ul class="list-container">
 		<li v-for="todo in todos" class="todo-item">
-			<span>{{ todo.task }}</span>
+			<span>{{ todo.task }} </span>
+			<p class="remove-button">Remove</p>
 		</li>
 	</ul>
 </template>
@@ -38,10 +39,35 @@ export default {
 }
 
 .todo-item {
-	list-style: none;
-	padding: 5px 25px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	width: 830px;
+	height: 30px;
+	font-weight: 400;
+	font-size: 16.5px;
+	line-height: 20px;
+	color: #fffffe;
+	background: #004643;
+	border-radius: 5px;
+	margin-block: 5px;
+}
+
+.remove-button {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5px 10px;
 	gap: 10px;
-	width: 900px;
-	height: 40px;
+	width: 77px;
+	height: 30px;
+	background: #e16162;
+	border-radius: 30px;
+	font-size: 16.5px;
+	line-height: 20px;
+	color: #fffffe;
 }
 </style>
