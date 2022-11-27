@@ -5,7 +5,8 @@ import TodoList from './TodoList.vue';
 export default {
 	name: 'Todos',
 	components: {
-		TodoInput
+		TodoInput,
+		TodoList
 	}
 };
 </script>
