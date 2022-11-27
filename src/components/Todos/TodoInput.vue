@@ -4,7 +4,12 @@ export default {
 	name: 'todo-input',
 	setup() {
 		const newTodo = ref('');
-		const data = JSON.parse(`${localStorage.getItem('todos')}`) || '';
+		const initialData = [
+			{
+				task: 'Finish Views project'
+			}
+		];
+		const data = JSON.parse(`${localStorage.getItem('todos')}`) || initialData;
 		const todos = ref(data);
 
 		function addTodo() {
