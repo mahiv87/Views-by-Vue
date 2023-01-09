@@ -22,12 +22,13 @@ export default {
 .todo-container {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 	padding: 20px 14px;
 	gap: 32px;
 	max-width: 977px;
 	/* height: 481px; */
-	margin-top: 150px;
+	margin-block: 150px 75px;
 	margin-inline: auto;
 	background: #e8e4e6;
 	box-shadow: 7px 7px 10px 7px rgba(0, 0, 0, 0.25);
@@ -36,7 +37,8 @@ export default {
 
 @media screen and (max-width: 768px) {
 	.todo-container {
-		margin-top: 75px;
+		margin-block: 75px;
+		margin-inline: 10px;
 	}
 }
 </style>
