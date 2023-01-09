@@ -51,45 +51,62 @@ export default {
 </template>
 
 <style scoped>
-/* .input-container {
+.input-container {
 	display: flex;
-	flex-direction: row;
+	justify-content: space-evenly;
 	align-items: center;
-	padding: 0px 60px;
-	gap: 110px;
-
-	width: 949px;
-	height: 49px;
+	max-width: 949px;
+	/* padding: 0px 60px; */
+	/* height: 49px; */
 }
 
 .todo-button {
-	display: flex;
+	background: #f9bc60;
+	color: #001e1d;
+	margin-inline: 10px;
+	padding: 10px;
+	border-radius: 4px;
+	font-weight: bold;
+	/* display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 119px;
+	max-width: 119px;
 	height: 47px;
 	color: #001e1d;
 	background: #f9bc60;
 	border-radius: 30px;
 	font-weight: 400;
 	font-size: 22px;
-	line-height: 27px;
+	line-height: 27px; */
 }
 
 .todo-button:hover {
 	background: hsl(36, 93%, 72%);
 	cursor: pointer;
-	letter-spacing: 1px;
 	transition: all ease-out 300ms;
 }
 
 #todo-input {
 	width: 600px;
+	height: 35px;
+	/* max-width: 600px;
 	height: 49px;
 	padding-left: 10px;
 	background: #fffffe;
 	border-radius: 25px;
-	border-color: #001e1d;
-} */
+	border-color: #001e1d; */
+}
+
+@media screen and (max-width: 768px) {
+	.input-container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#todo-input {
+		width: 100%;
+	}
+}
 </style>
