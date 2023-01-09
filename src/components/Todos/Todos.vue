@@ -35,7 +35,7 @@ export default {
 	border-radius: 5px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
 	.todo-container {
 		margin-block: 75px;
 		margin-inline: 10px;

@@ -10,6 +10,7 @@ import Todos from './components/Todos/Todos.vue';
 	<NavVue />
 	<div class="heading">
 		<img src="./assets/todo-list.svg" alt="todo-list-svg" class="todo-img" />
+		<p></p>
 		<!-- <p class="title">Vue Your TODOs</p> -->
 		<p class="subtitle">Your TODOs powered by Vue</p>
 	</div>
@@ -27,6 +28,8 @@ import Todos from './components/Todos/Todos.vue';
 	margin: 50px auto;
 }
 .subtitle {
+	position: relative;
+	top: -1000px;
 	padding: 0px 8px;
 	max-width: 500px;
 	color: #abd1c6;
@@ -52,7 +55,45 @@ import Todos from './components/Todos/Todos.vue';
 	height: auto;
 }
 
-@media screen and (max-width: 768px) {
+p::after {
+	display: block;
+	content: '';
+	position: relative;
+	top: -10%;
+	left: 0%;
+	width: 600px;
+	height: 1000px;
+	border-radius: 50%;
+	background: radial-gradient(
+		circle,
+		rgba(0, 124, 121, 1) 0%,
+		rgba(0, 70, 67, 1) 100%
+	);
+	filter: blur(50px);
+	transform: rotate(-45deg);
+	z-index: -2;
+}
+
+.subtitle::after {
+	display: block;
+	content: '';
+	position: relative;
+	top: -20%;
+	left: 0%;
+	width: 600px;
+	height: 1000px;
+	border-radius: 50%;
+	background: radial-gradient(
+		circle,
+		rgba(249, 188, 96, 0.3) 0%,
+		rgba(0, 70, 67, 1) 100%
+	);
+	filter: blur(50px);
+	transform: rotate(45deg);
+	z-index: -1;
+}
+
+@media screen and (max-width: 992px) {
 	.subtitle {
 		font-size: 32px;
 		margin-bottom: 75px;

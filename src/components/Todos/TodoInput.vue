@@ -98,7 +98,7 @@ export default {
 	border-color: #001e1d; */
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
 	.input-container {
 		width: 100%;
 		display: flex;
