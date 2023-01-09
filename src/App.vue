@@ -29,7 +29,7 @@ import Todos from './components/Todos/Todos.vue';
 }
 .subtitle {
 	position: relative;
-	top: -1000px;
+	top: -1270px;
 	padding: 0px 8px;
 	max-width: 500px;
 	color: #abd1c6;
@@ -62,7 +62,7 @@ p::after {
 	top: -10%;
 	left: 0%;
 	width: 600px;
-	height: 1000px;
+	height: calc(100vh - 10rem);
 	border-radius: 50%;
 	background: radial-gradient(
 		circle,
@@ -70,7 +70,7 @@ p::after {
 		rgba(0, 70, 67, 1) 100%
 	);
 	filter: blur(50px);
-	transform: rotate(-45deg);
+	transform: rotate(-60deg);
 	z-index: -2;
 }
 
@@ -81,7 +81,7 @@ p::after {
 	top: -20%;
 	left: 0%;
 	width: 600px;
-	height: 1000px;
+	height: calc(100vh - 10rem);
 	border-radius: 50%;
 	background: radial-gradient(
 		circle,
@@ -89,14 +89,23 @@ p::after {
 		rgba(0, 70, 67, 1) 100%
 	);
 	filter: blur(50px);
-	transform: rotate(45deg);
+	transform: rotate(60deg);
 	z-index: -1;
 }
 
 @media screen and (max-width: 992px) {
 	.subtitle {
+		top: 0;
 		font-size: 32px;
 		margin-bottom: 75px;
+	}
+
+	p::after {
+		display: none;
+	}
+
+	.subtitle::after {
+		display: none;
 	}
 }
 </style>
