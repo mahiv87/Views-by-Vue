@@ -33,4 +33,10 @@ export default {
 	box-shadow: 7px 7px 10px 7px rgba(0, 0, 0, 0.25);
 	border-radius: 5px;
 }
+
+@media screen and (max-width: 768px) {
+	.todo-container {
+		margin-top: 75px;
+	}
+}
 </style>

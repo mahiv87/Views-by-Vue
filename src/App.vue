@@ -24,7 +24,7 @@ import Todos from './components/Todos/Todos.vue';
 	padding: 10px;
 	max-width: 992px;
 	height: 200px;
-	margin: 20px auto;
+	margin: 50px auto;
 }
 .subtitle {
 	padding: 0px 8px;
@@ -42,7 +42,7 @@ import Todos from './components/Todos/Todos.vue';
 	padding: 0px;
 	margin-bottom: 0;
 	max-width: 981px;
-	height: 112px;
+	/* height: 112px; */
 	color: #fffffe;
 	font-size: 92.59px;
 }
@@ -50,5 +50,12 @@ import Todos from './components/Todos/Todos.vue';
 .todo-img {
 	width: 250px;
 	height: auto;
+}
+
+@media screen and (max-width: 768px) {
+	.subtitle {
+		font-size: 32px;
+		margin-bottom: 75px;
+	}
 }
 </style>
