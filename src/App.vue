@@ -22,13 +22,13 @@ import Todos from './components/Todos/Todos.vue';
 	flex-direction: column;
 	align-items: center;
 	padding: 10px;
-	width: 992px;
+	max-width: 992px;
 	height: 200px;
 	margin: 20px auto;
 }
 .subtitle {
 	padding: 0px 8px;
-	width: 500px;
+	max-width: 500px;
 	color: #abd1c6;
 	font-size: 52.11px;
 	text-align: center;
@@ -41,7 +41,7 @@ import Todos from './components/Todos/Todos.vue';
 	align-items: center;
 	padding: 0px;
 	margin-bottom: 0;
-	width: 981px;
+	max-width: 981px;
 	height: 112px;
 	color: #fffffe;
 	font-size: 92.59px;

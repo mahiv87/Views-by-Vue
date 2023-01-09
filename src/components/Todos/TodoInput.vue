@@ -51,7 +51,7 @@ export default {
 </template>
 
 <style scoped>
-.input-container {
+/* .input-container {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -91,5 +91,5 @@ export default {
 	background: #fffffe;
 	border-radius: 25px;
 	border-color: #001e1d;
-}
+} */
 </style>

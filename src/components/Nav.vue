@@ -1,8 +1,17 @@
 <template>
 	<div class="nav-container">
-		<img src="../assets/views-logo-transparent.svg" alt="Views logo" class="nav-logo" />
+		<img
+			src="../assets/views-logo-transparent.svg"
+			alt="Views logo"
+			class="nav-logo"
+		/>
 		<div class="nav-links">
-			<a href="https://github.com/mahiv87/Views-by-Vue" class="nav-button" target="_blank">GitHub</a>
+			<a
+				href="https://github.com/mahiv87/Views-by-Vue"
+				class="nav-button"
+				target="_blank"
+				>GitHub</a
+			>
 			<a href="#" class="nav-button" target="_blank">Donate</a>
 		</div>
 	</div>
@@ -15,7 +24,7 @@
 	justify-content: center;
 	align-items: center;
 	padding: 0px 25px;
-	gap: 350px;
+	/* gap: 350px; */
 	background: #001e1d;
 	height: 70px;
 }

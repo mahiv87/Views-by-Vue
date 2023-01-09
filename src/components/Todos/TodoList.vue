@@ -22,19 +22,18 @@ export default {
 	<ul class="list-container">
 		<li v-for="todo in todos" class="todo-item">
 			<span>{{ todo.task }} </span>
-			<p class="remove-button">Remove</p>
+			<p class="remove-button">X</p>
 		</li>
 	</ul>
 </template>
 
 <style scoped>
-.list-container {
+/* .list-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
 	align-items: center;
 	padding: 0px;
-	width: 900px;
 	height: 360px;
 }
 
@@ -44,7 +43,7 @@ export default {
 	justify-content: space-between;
 	align-items: center;
 	padding: 10px;
-	width: 830px;
+	width: 500px;
 	height: 30px;
 	font-weight: 400;
 	font-size: 16.5px;
@@ -62,12 +61,11 @@ export default {
 	align-items: center;
 	padding: 5px 10px;
 	gap: 10px;
-	width: 77px;
-	height: 30px;
 	background: #e16162;
-	border-radius: 30px;
+	border-radius: 4px;
 	font-size: 16.5px;
+	font-weight: bold;
 	line-height: 20px;
 	color: #fffffe;
-}
+} */
 </style>
