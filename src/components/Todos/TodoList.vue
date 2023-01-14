@@ -16,7 +16,7 @@ export default {
 		};
 	},
 	methods: {
-		removeTodo(todo) {
+		removeTodo(todo: string) {
 			const index = this.todos.indexOf(todo);
 			this.todos.splice(index, 1);
 			localStorage.setItem('todos', JSON.stringify(this.todos));
