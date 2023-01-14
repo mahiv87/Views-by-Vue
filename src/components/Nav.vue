@@ -20,11 +20,9 @@
 <style scoped>
 .nav-container {
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
 	padding: 0px 25px;
-	/* gap: 350px; */
 	background: #001e1d;
 	height: 70px;
 }
@@ -38,20 +36,17 @@
 
 .nav-links {
 	display: flex;
-	flex-direction: row;
+	justify-content: flex-end;
 	align-items: center;
 	padding: 0px;
-	gap: 36px;
 	width: 274px;
 	height: 47px;
 }
 
 .nav-button {
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 10px;
 	width: 75px;
 	height: 25px;
 	border-radius: 30px;
