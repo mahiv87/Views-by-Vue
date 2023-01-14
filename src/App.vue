@@ -51,7 +51,7 @@ import Footer from './components/Footer.vue';
 }
 
 .todo-img {
-	width: 250px;
+	width: 200px;
 	height: auto;
 	margin-top: 25px;
 }
@@ -98,7 +98,7 @@ import Footer from './components/Footer.vue';
 	.subtitle {
 		top: 0;
 		font-size: 22px;
-		margin-bottom: 75px;
+		/* margin-bottom: 75px; */
 	}
 
 	p::after {

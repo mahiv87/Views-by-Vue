@@ -35,7 +35,7 @@ export default {
 
 @media screen and (max-width: 992px) {
 	.todo-container {
-		margin-block: 75px;
+		margin-block: 50px;
 		margin-inline: 10px;
 	}
 }
