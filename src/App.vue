@@ -28,8 +28,8 @@ import Todos from './components/Todos/Todos.vue';
 	margin: 50px auto;
 }
 .subtitle {
-	position: relative;
-	top: -1270px;
+	/* position: relative;
+	top: -1270px; */
 	padding: 0px 8px;
 	max-width: 500px;
 	color: #abd1c6;
@@ -55,7 +55,7 @@ import Todos from './components/Todos/Todos.vue';
 	height: auto;
 }
 
-p::after {
+/* p::after {
 	display: block;
 	content: '';
 	position: relative;
@@ -72,9 +72,9 @@ p::after {
 	filter: blur(50px);
 	transform: rotate(-60deg);
 	z-index: -2;
-}
+} */
 
-.subtitle::after {
+/* .subtitle::after {
 	display: block;
 	content: '';
 	position: relative;
@@ -91,7 +91,7 @@ p::after {
 	filter: blur(50px);
 	transform: rotate(60deg);
 	z-index: -1;
-}
+} */
 
 @media screen and (max-width: 992px) {
 	.subtitle {

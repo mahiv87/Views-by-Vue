@@ -28,22 +28,21 @@ export default {
 </template>
 
 <style scoped>
-/* .list-container {
+.list-container {
 	display: flex;
 	flex-direction: column;
-	justify-content: start;
+	justify-content: center;
 	align-items: center;
 	padding: 0px;
-	height: 360px;
+	width: 100%;
 }
 
 .todo-item {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	padding: 10px;
-	width: 500px;
+	width: 75%;
 	height: 30px;
 	font-weight: 400;
 	font-size: 16.5px;
@@ -67,5 +66,11 @@ export default {
 	font-weight: bold;
 	line-height: 20px;
 	color: #fffffe;
-} */
+}
+
+@media screen and (max-width: 768px) {
+	.todo-item {
+		width: 100%;
+	}
+}
 </style>

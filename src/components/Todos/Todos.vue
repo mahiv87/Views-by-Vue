@@ -26,8 +26,7 @@ export default {
 	align-items: center;
 	padding: 20px 14px;
 	gap: 32px;
-	max-width: 977px;
-	/* height: 481px; */
+	max-width: 768px;
 	margin-block: 150px 75px;
 	margin-inline: auto;
 	background: #e8e4e6;
