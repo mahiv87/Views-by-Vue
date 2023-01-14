@@ -33,10 +33,82 @@ export default {
 	border-radius: 5px;
 }
 
+.todo-container::before {
+	display: block;
+	position: absolute;
+	top: -290px;
+	content: '';
+	width: 200px;
+	height: 600px;
+	border-radius: 50%;
+	background: radial-gradient(
+		circle,
+		rgba(0, 124, 121, 1) 0%,
+		rgba(0, 70, 67, 1) 100%
+	);
+	filter: blur(40px);
+	transform: rotate(-60deg);
+	z-index: -1;
+}
+
+.todo-container::after {
+	display: block;
+	position: absolute;
+	top: -260px;
+	content: '';
+	width: 200px;
+	height: 600px;
+	border-radius: 50%;
+	background: radial-gradient(
+		circle,
+		rgba(249, 188, 96, 0.3) 0%,
+		rgba(0, 70, 67, 1) 100%
+	);
+	filter: blur(40px);
+	transform: rotate(60deg);
+	z-index: -2;
+}
+
 @media screen and (max-width: 992px) {
 	.todo-container {
 		margin-block: 50px;
 		margin-inline: 10px;
+	}
+
+	.todo-container::before {
+		display: block;
+		position: absolute;
+		top: -100px;
+		content: '';
+		width: 100px;
+		height: 300px;
+		border-radius: 50%;
+		background: radial-gradient(
+			circle,
+			rgba(0, 124, 121, 1) 0%,
+			rgba(0, 70, 67, 1) 100%
+		);
+		filter: blur(20px);
+		transform: rotate(-60deg);
+		z-index: -1;
+	}
+
+	.todo-container::after {
+		display: block;
+		position: absolute;
+		top: -80px;
+		content: '';
+		width: 100px;
+		height: 300px;
+		border-radius: 50%;
+		background: radial-gradient(
+			circle,
+			rgba(249, 188, 96, 0.3) 0%,
+			rgba(0, 70, 67, 1) 100%
+		);
+		filter: blur(20px);
+		transform: rotate(60deg);
+		z-index: -2;
 	}
 }
 </style>
