@@ -55,9 +55,7 @@ export default {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	max-width: 949px;
-	/* padding: 0px 60px; */
-	/* height: 49px; */
+	max-width: 768px;
 }
 
 .todo-button {
@@ -67,18 +65,6 @@ export default {
 	padding: 10px;
 	border-radius: 4px;
 	font-weight: bold;
-	/* display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	max-width: 119px;
-	height: 47px;
-	color: #001e1d;
-	background: #f9bc60;
-	border-radius: 30px;
-	font-weight: 400;
-	font-size: 22px;
-	line-height: 27px; */
 }
 
 .todo-button:hover {
@@ -90,15 +76,12 @@ export default {
 #todo-input {
 	width: 600px;
 	height: 35px;
-	/* max-width: 600px;
-	height: 49px;
-	padding-left: 10px;
 	background: #fffffe;
-	border-radius: 25px;
-	border-color: #001e1d; */
+	border-color: #001e1d;
+	border-radius: 4px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
 	.input-container {
 		width: 100%;
 		display: flex;

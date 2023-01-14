@@ -14,6 +14,13 @@ export default {
 		return {
 			todos
 		};
+	},
+	methods: {
+		removeTodo(todo) {
+			const index = this.todos.indexOf(todo);
+			this.todos.splice(index, 1);
+			localStorage.setItem('todos', JSON.stringify(this.todos));
+		}
 	}
 };
 </script>
@@ -22,7 +29,7 @@ export default {
 	<ul class="list-container">
 		<li v-for="todo in todos" class="todo-item">
 			<span>{{ todo.task }} </span>
-			<p class="remove-button">X</p>
+			<p class="remove-button" @click="removeTodo(todo)">X</p>
 		</li>
 	</ul>
 </template>
@@ -54,12 +61,8 @@ export default {
 }
 
 .remove-button {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	cursor: pointer;
 	padding: 5px 10px;
-	gap: 10px;
 	background: #e16162;
 	border-radius: 4px;
 	font-size: 16.5px;
