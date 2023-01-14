@@ -68,7 +68,7 @@ export default {
 }
 
 .todo-button:hover {
-	background: hsl(36, 93%, 72%);
+	background: #f9ac50;
 	cursor: pointer;
 	transition: all ease-out 300ms;
 }

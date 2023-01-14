@@ -6,10 +6,12 @@
 	</div>
 </template>
 
-<style>
+<style scoped>
 .footer-container {
-	display: flex;
-	justify-content: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	margin-inline: auto;
 	color: #001e1d;
 	font-weight: bold;
 }

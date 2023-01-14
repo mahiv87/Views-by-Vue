@@ -71,6 +71,10 @@ export default {
 	color: #fffffe;
 }
 
+.remove-button:hover {
+	background: #e14142;
+}
+
 @media screen and (max-width: 768px) {
 	.todo-item {
 		width: 100%;
