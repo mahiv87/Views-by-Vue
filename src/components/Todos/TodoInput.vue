@@ -1,6 +1,5 @@
 <script lang="ts">
 import { ref } from 'vue';
-import Todos from './Todos.vue';
 export default {
 	name: 'todo-input',
 	data() {
@@ -67,8 +66,9 @@ export default {
 .todo-button {
 	background: #f9bc60;
 	color: #001e1d;
-	margin-inline: 10px;
+	margin: 10px;
 	padding: 10px;
+	border: none;
 	border-radius: 4px;
 	font-weight: bold;
 }
@@ -83,7 +83,7 @@ export default {
 	width: 600px;
 	height: 35px;
 	background: #fffffe;
-	border-color: #001e1d;
+	border: none;
 	border-radius: 4px;
 }
 

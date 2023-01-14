@@ -8,16 +8,17 @@
 
 <style scoped>
 .footer-container {
-	position: fixed;
+	position: absolute;
 	bottom: 0;
 	width: 100%;
-	margin-inline: auto;
 	color: #001e1d;
 	font-weight: bold;
 }
 
 .footer-container p {
+	width: 250px;
 	font-size: 12.38px;
+	margin-inline: auto;
 }
 
 .heart {

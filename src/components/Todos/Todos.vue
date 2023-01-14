@@ -25,7 +25,6 @@ export default {
 	justify-content: center;
 	align-items: center;
 	padding: 20px 14px;
-	/* gap: 32px; */
 	max-width: 768px;
 	margin-block: 150px 75px;
 	margin-inline: auto;
