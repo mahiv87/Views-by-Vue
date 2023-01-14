@@ -8,10 +8,10 @@ import Footer from './components/Footer.vue';
 
 <template>
 	<NavVue />
-	<div class="heading">
+	<header class="heading">
 		<img src="./assets/todo-list.svg" alt="todo-list-svg" class="todo-img" />
 		<p class="subtitle">Your TODOs powered by Vue</p>
-	</div>
+	</header>
 	<Todos />
 	<Footer />
 </template>

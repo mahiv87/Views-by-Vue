@@ -1,5 +1,5 @@
 <template>
-	<div class="nav-container">
+	<nav class="nav-container">
 		<img
 			src="../assets/views-logo-transparent.svg"
 			alt="Views logo"
@@ -14,7 +14,7 @@
 			>
 			<a href="#" class="nav-button" target="_blank">Donate</a>
 		</div>
-	</div>
+	</nav>
 </template>
 
 <style scoped>

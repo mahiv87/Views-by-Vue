@@ -1,10 +1,16 @@
 <script lang="ts">
 import { ref } from 'vue';
+import Todos from './Todos.vue';
 export default {
 	name: 'todo-input',
+	data() {
+		return {
+			todos: JSON.parse(`${localStorage.getItem('todos')}`) || []
+		};
+	},
 	setup() {
 		const newTodo = ref('');
-		const initialData = [
+		const initialData: { task: string }[] = [
 			{
 				task: 'Finish Views project'
 			}
@@ -44,10 +50,10 @@ export default {
 </script>
 
 <template>
-	<div class="input-container">
+	<form class="input-container" @submit="addTodo()">
 		<input type="text" id="todo-input" v-model="newTodo" />
-		<p class="todo-button" @click="addTodo()">Submit</p>
-	</div>
+		<button class="todo-button" type="submit">Submit</button>
+	</form>
 </template>
 
 <style scoped>

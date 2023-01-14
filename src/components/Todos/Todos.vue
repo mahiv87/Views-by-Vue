@@ -12,10 +12,10 @@ export default {
 </script>
 
 <template>
-	<div class="todo-container">
+	<section class="todo-container">
 		<TodoInput />
 		<TodoList />
-	</div>
+	</section>
 </template>
 
 <style scoped>
@@ -25,7 +25,7 @@ export default {
 	justify-content: center;
 	align-items: center;
 	padding: 20px 14px;
-	gap: 32px;
+	/* gap: 32px; */
 	max-width: 768px;
 	margin-block: 150px 75px;
 	margin-inline: auto;

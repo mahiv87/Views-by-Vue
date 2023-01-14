@@ -1,9 +1,9 @@
 <template>
-	<div class="footer-container">
+	<footer class="footer-container">
 		<p>
 			Proudly made with <span class="heart">&#9829;</span> by Marcus Herrera
 		</p>
-	</div>
+	</footer>
 </template>
 
 <style scoped>
