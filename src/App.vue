@@ -1,20 +1,19 @@
 <script setup lang="ts">
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue';
 import NavVue from './components/Nav.vue';
 import Todos from './components/Todos/Todos.vue';
+import Footer from './components/Footer.vue';
 </script>
 
 <template>
 	<NavVue />
 	<div class="heading">
 		<img src="./assets/todo-list.svg" alt="todo-list-svg" class="todo-img" />
-		<p></p>
-		<!-- <p class="title">Vue Your TODOs</p> -->
 		<p class="subtitle">Your TODOs powered by Vue</p>
 	</div>
 	<Todos />
+	<Footer />
 </template>
 
 <style scoped>
@@ -33,9 +32,10 @@ import Todos from './components/Todos/Todos.vue';
 	padding: 0px 8px;
 	max-width: 500px;
 	color: #abd1c6;
-	font-size: 52.11px;
+	font-size: 39.09px;
+	font-style: italic;
 	text-align: center;
-	margin-top: 0;
+	margin: 25px 0px;
 }
 .title {
 	display: flex;
@@ -53,6 +53,7 @@ import Todos from './components/Todos/Todos.vue';
 .todo-img {
 	width: 250px;
 	height: auto;
+	margin-top: 25px;
 }
 
 /* p::after {
@@ -96,7 +97,7 @@ import Todos from './components/Todos/Todos.vue';
 @media screen and (max-width: 992px) {
 	.subtitle {
 		top: 0;
-		font-size: 32px;
+		font-size: 22px;
 		margin-bottom: 75px;
 	}
 
